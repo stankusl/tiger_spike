@@ -5,7 +5,8 @@
   "description": "Tiger Spike Technical Test",
   "private": false,
   "scripts": {
-    "start": "gulp build && bower install && node server.js",
+    "start": "gulp build && node server.js",
+    "postinstall": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
