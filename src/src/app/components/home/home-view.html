@@ -1,0 +1,58 @@
+<!-- Add your site or application content here -->
+<header>
+    <h1>Tiger<span>Spike</span></h1>
+</header>
+
+<div class="container">
+
+
+
+    <section class="image-gallery col-xs-12">
+
+            <div class="spinner" ng-if="Home.loading"></div>
+
+
+              <div ng-if="!Home.loading">
+                  <!-- <div  data-ng-repeat="item in list">
+                      {{ item }}
+                  </div> -->
+
+                  <ul class="dynamic-grid" angular-grid="pics" ag-options="angularGridOptions" ag-id="gallery"  >
+                    <li data-ng-repeat="pic in Home.pictures.items" class="grid">
+                        <img src="{{pic.media.m}}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
+                    </li>
+                  </ul>
+
+
+
+
+                  <!-- <div class="image" ng-repeat="picture in Home.pictures.items track by $index">
+                      <figure class="effect-picture">
+                          <img class="picture" ng-src="{{ picture.media.m }}" alt="{{ picture.title }}">
+                          <figcaption>
+                              <h2>{{ picture.title || 'N/A' }}</h2>
+
+                              <p class="meta-holder">
+                                  <span class="title">{{ picture.title || 'N/A'}}</span>
+                              </p>
+                          </figcaption>
+                      </figure>
+                  </div> -->
+
+
+                  <!-- <span class="author">Author : {{ picture.author || 'N/A' }}</span>
+                  <span class="author_id">Author Id: {{ picture.author_id || 'N/A' }}</span>
+                  <span class="taken_at">Date Taken : {{ picture.date_taken  | date:'yyyy/MM/dd' || 'N/A' }}</span>
+                  <span class="created_at">Publish Date : {{ picture.published  | date:'yyyy/MM/dd' || 'N/A'}}</span>
+                  <span class="tags">Tags : {{ picture.tags || 'N/A'}}</span> -->
+              </div>
+
+
+
+
+
+        <div class="clearfix"></div>
+    </section>
+
+    <div class="clearfix"></div>
+</div>
