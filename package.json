@@ -29,6 +29,7 @@
     "karma-jasmine": "^1.1.0",
     "mjml": "latest",
     "rimraf": "latest",
-    "connect-modrewrite": "latest"
+    "connect-modrewrite": "latest",
+    "express" : "latest"
   }
 }
