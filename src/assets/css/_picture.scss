@@ -55,7 +55,15 @@ figure.effect-picture figcaption::after {
 }
 
 figure.effect-picture h2 {
-	padding-top: 30%;
+	max-height: 92px;
+  overflow: hidden;
+  word-break: break-all;
+	padding-top: 12%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  font-size: 1.4em;
+  text-align: center;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
