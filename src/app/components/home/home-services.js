@@ -4,7 +4,7 @@
   function HomeServices($rootScope, $http, $q, $log) {
 
       // Proxy to bypass Browser CORS protection
-      var pictureEndpoint = $rootScope.WebAPI;
+      var pictureEndpoint = $rootScope.WebAPI + '/tigerspike';
       var fallbackEndpoint = "app/api/" + 'fallback.json';
 
 

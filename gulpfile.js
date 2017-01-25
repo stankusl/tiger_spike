@@ -79,30 +79,30 @@ function printError(error) {
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// BROWSERSYNC SERVE
-// var config = {
-//     server: {
-//         baseDir: "./build",
-//         middleware: [
-//                 modRewrite([
-//                     '!\\.\\w+$ /index.html [L]'
-//                 ])
-//             ]
-//     },
-//     files: ['./build/**/*'],
-//     tunnel: false,
-//     host: 'localhost',
-//     port: process.env.PORT || 8080,
-//     notify: false,
-//     logPrefix: "frontend",
-//     watchTask: true
-// };
-//
-// gulp.task('serve', function () {
-//     setTimeout(function () {
-//         browserSync(config);
-//     }, 5000)
-// });
+//BROWSERSYNC SERVE
+var config = {
+    server: {
+        baseDir: "./build",
+        middleware: [
+                modRewrite([
+                    '!\\.\\w+$ /index.html [L]'
+                ])
+            ]
+    },
+    files: ['./build/**/*'],
+    tunnel: false,
+    host: 'localhost',
+    port: process.env.PORT || 8080,
+    notify: false,
+    logPrefix: "frontend",
+    watchTask: true
+};
+
+gulp.task('serve2', function () {
+    setTimeout(function () {
+        browserSync(config);
+    }, 5000)
+});
 
 /////////////////////////////////////////////////////////////////////////////
 // application BUILD
@@ -214,3 +214,4 @@ gulp.task('clean', function (cb) {
 /////////////////////////////////////////////////////////////////////////////
 // DEFAULT TASK
 gulp.task('default', ['build', 'serve', 'watch']);
+gulp.task('develop', ['build', 'serve2', 'watch']);

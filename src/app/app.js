@@ -8,7 +8,7 @@
 
         // this is available from all across the app
         $rootScope.appName = 'Tiger Spike';
-        $rootScope.WebAPI = "http://188.166.154.233/public/flicker";
+        $rootScope.WebAPI = "https://codedemon.co.uk";
 
     }])
 
