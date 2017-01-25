@@ -1,5 +1,5 @@
 {
-  "name": "TigerSpike",
+  "name": "tiger-spike",
   "version": "1.0.0",
   "authors": [
     "Luke Stankus <stankusl@gmail.com>"
@@ -19,7 +19,8 @@
     "angular-sanitize": "latest",
     "ng-image-gallery": "^2.0.8",
     "angular-resource": "^1.6.1",
-    "angular-masonry": "^0.16.0"
+    "angular-masonry": "^0.16.0",
+    "angulargrid": "^0.6.3"
   },
   "devDependencies": {}
 }
