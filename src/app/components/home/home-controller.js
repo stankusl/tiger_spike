@@ -22,17 +22,18 @@
             },
             function(err) {
               console.log('Error retrieving from endpoint: ', err);
-              self.loading = false;
+
 
                 HomeServices.getFallBackImages().then(
                   function(result) {
+                    self.loading = false;
                     self.pictures = result;
                   },
                   function(err) {
                       console.log('Failed Local: ', err);
                   });
 
-            });
+          });
 
     };
 

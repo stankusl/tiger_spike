@@ -11,16 +11,11 @@
   ],
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.2",
-    "AngularJS-Toaster": "latest",
     "jquery": "latest",
     "angular": "latest",
     "angular-bootstrap": "latest",
     "angular-ui-router": "latest",
-    "angular-sanitize": "latest",
-    "ng-image-gallery": "^2.0.8",
-    "angular-resource": "^1.6.1",
-    "angular-masonry": "^0.16.0",
-    "angulargrid": "^0.6.3"
+    "angular-sanitize": "latest"
   },
   "devDependencies": {}
 }

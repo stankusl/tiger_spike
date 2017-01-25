@@ -5,7 +5,7 @@
 
       // Proxy to bypass Browser CORS protection
       var pictureEndpoint = $rootScope.WebAPI + '/tigerspike';
-      var fallbackEndpoint = "app/api/" + 'fallback.json';
+      var fallbackEndpoint = "app/api/fallback.json";
 
 
       return {
@@ -30,8 +30,6 @@
               });
           return deferred.promise;
       }
-
-
 
       function getFallBackImages() {
 
