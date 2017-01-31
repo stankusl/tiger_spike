@@ -12,6 +12,7 @@
   "dependencies": {
     "angular-mocks": "^1.6.0",
     "browser-sync": "latest",
+    "bower": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
